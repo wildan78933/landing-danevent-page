@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 
 export default function FormCheckout({ tickets }) {
   const router = useRouter();
-  const { ticketId, organizer } = router.query;
+  const { ticketId, organizer, id } = router.query;
 
   const [form, setForm] = useState({
     email: "",
@@ -16,7 +16,7 @@ export default function FormCheckout({ tickets }) {
     firstName: "",
     role: "",
     payment: "",
-    event: router.query.id,
+    event: id,
   });
 
   const [payments, setPayments] = useState([]);
@@ -76,7 +76,6 @@ export default function FormCheckout({ tickets }) {
       });
       let payload = {
         event: form.event,
-        tickets: _temp,
         payment: form.payment,
         personalDetail: {
           lastName: form.lastName,
@@ -84,6 +83,8 @@ export default function FormCheckout({ tickets }) {
           email: form.email,
           role: form.role,
         },
+
+        tickets: _temp,
       };
       const res = await postData(
         "api/v1/checkout",
