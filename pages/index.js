@@ -29,7 +29,7 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const req = await getData("api/v1/events");
+  const req = await getData("/api/v1/events");
 
   const res = req.data;
 
