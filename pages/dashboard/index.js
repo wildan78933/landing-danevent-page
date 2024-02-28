@@ -60,11 +60,9 @@ export default function Dashboard({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const req = await getData(`api/v1/orders`, {}, context.req.cookies.token);
+  const req = await getData("api/v1/events");
 
   const res = req.data;
-
-  console.log(res);
 
   return {
     props: { data: res },
