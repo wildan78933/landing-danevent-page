@@ -161,7 +161,7 @@ export default function DetailPage({ detailPage, id }) {
 }
 
 export async function getServerSideProps(context) {
-  const req = await getData(`api/v1/events/${context.params.id}`);
+  const req = await getData(`/api/v1/events/${context.params.id}`);
 
   const res = req.data;
   console.log(res);
