@@ -60,7 +60,7 @@ export default function Dashboard({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const req = await getData(`/api/v1/orders`, {}, context.req.cookies.token);
+  const req = await getData(`api/v1/orders`, {}, context.req.cookies.token);
 
   const res = req.data;
 
