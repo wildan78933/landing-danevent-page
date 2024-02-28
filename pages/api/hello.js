@@ -1,9 +1,5 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-
-Waqf has great potential in Indonesia, the great potential of both movable object waqf and immovable object waqf in Indonesia is inversely proportional to the realization of its collection. The low collection of waqf is due to several factors, understanding of waqf is one of the factors for the lack of development of waqf in Indonesia. The understanding of the community is divided into two, some accept the concept of waqf of movable objects (money, etc.) and some reject it and they prefer to waqf immovable objects (buildings, land, etc.) compared to waqf of movable objects. Possible causes for people to prefer waqf with immovable objects rather than movable objects include ease in waqf, direct benefits, lack of knowledge or ability of individuals, understanding in processing information media that continues to grow along with the times, lack of trust in institutions which results in slow knowledge about the development of waqf received. This study aims to determine the influence of knowledge, motivation, information media on waqf decisions in Ar-Rahman Mosque, Al-Mukmin, Al-Hidayah Sei Village. Selayur Palembang City.
-
-This study used a quantitative approach. The population in this study is all wakif in Masjid Ar-Rahman, Al-Mukmin, Al-Hidayah Sei Village. Selayur Palembang City with a sample used as many as 60 respondents using Purposive Sampling technique. This study used primary data obtained from the distribution of questionnaires to 60 respondents using Likert scale.
-
-Based on the results of research conducted by researchers, it can be concluded that: knowledge has a positive and significant effect on waqf decisions with a calculated value of > ttable, which is 2.092 > 1.67203 with a significance value of 0.041 < 0.05. Motivation does not have a significant effect on waqf decisions with a calculated value of > ttable, which is 0.551 > 1.67203 with a significance value of 0.584 < 0.05. Information media has a positive and significant effect on waqf decisions with a calculated value of > ttable, which is 4.624 > 1.67203 with a significance value of 0.000 < 0.05. Knowledge, motivation, information media influence simultaneously or together on waqf decisions with Fcalculated> Ftable values of 26.047 > 3.16 and the value of the R2 coefficient of determination in this study obtained an adjusted R square value of 0.560 or 56%.
-
-
+export default function handler(req, res) {
+  res.status(200).json({ name: "John Doe" });
+}
